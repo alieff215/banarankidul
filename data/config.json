@@ -1,0 +1,12 @@
+{
+    "siteName": "Dukuh Banaran Kidul",
+    "description": "Website Resmi Profil Dukuh Banaran Kidul, Kecamatan Contoh, Kabupaten Contoh.",
+    "address": "Jl. Raya Banaran Kidul No. 1, Dukuh Banaran Kidul, Kec. Contoh, Kab. Contoh 12345",
+    "email": "info@banarankidul.desa.id",
+    "phone": "081327991741",
+    "socialMedia": {
+        "facebook": "https://facebook.com",
+        "instagram": "https://instagram.com",
+        "youtube": "https://youtube.com"
+    }
+}

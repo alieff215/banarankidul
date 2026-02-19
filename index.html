@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dukuh Banaran Kidul</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%233498db'/%3E%3Cpath d='M16 30 L32 18 L48 30 V50 H16 Z' fill='%23ffffff'/%3E%3Crect x='26' y='34' width='12' height='16' fill='%233498db'/%3E%3C/svg%3E">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader-spinner"></div>
+        <div class="loader-text">SELAMAT DATANG</div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <i class="fas fa-landmark"></i> Dukuh Banaran Kidul
+            </a>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Beranda</a></li>
+                <li><a href="profile.html">Profil Dukuh</a></li>
+                <li class="dropdown">
+    <a href="#" class="dropdown-toggle">Potensi</a>
+    <div class="dropdown-content">
+        <a href="tourism.html">Wisata</a>
+        <a href="posyandu.html">Posyandu</a>
+        <a href="umkm.html">UMKM</a>
+        <a href="gallery.html">Galeri Kegiatan</a>
+    </div>
+</li>
+
+                <li><a href="contact.html">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-slider">
+            <div class="hero-slide active" style="background-image: url('https://placehold.co/1920x600/2c3e50/ffffff?text=Pemandangan+Dukuh+1');"></div>
+            <div class="hero-slide" style="background-image: url('https://placehold.co/1920x600/34495e/ffffff?text=Kegiatan+Warga+2');"></div>
+            <div class="hero-slide" style="background-image: url('https://placehold.co/1920x600/1abc9c/ffffff?text=Pertanian+Padi+dan+Jagung+3');"></div>
+            <button class="hero-nav hero-prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="hero-nav hero-next"><i class="fas fa-chevron-right"></i></button>
+            <div class="hero-dots">
+                <button class="hero-dot active" data-index="0"></button>
+                <button class="hero-dot" data-index="1"></button>
+                <button class="hero-dot" data-index="2"></button>
+            </div>
+        </div>
+        <div class="hero-content">
+            <h1>Selamat Datang di Dukuh Banaran Kidul</h1>
+            <p>Mewujudkan Dukuh Mandiri, Sejahtera, dan Berbudaya</p>
+            <a href="profile.html" class="btn">Tentang Kami</a>
+        </div>
+    </section>
+
+    <!-- Stats Section (New) -->
+    <section class="stats-section">
+        <div class="stats-grid">
+            <div class="stat-item">
+                <div class="stat-number" data-target="600">0</div>
+                <div class="stat-label">Jumlah Penduduk</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-target="172">0</div>
+                <div class="stat-label">Jumlah KK</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-target="4">0</div>
+                <div class="stat-label">Jumlah RT</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-target="2">0</div>
+                <div class="stat-label">Jumlah RW</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Berita Terkini -->
+    <section class="container">
+        <div class="section-title">
+            <h2>Berita Terkini</h2>
+            <p>Kabar terbaru seputar kegiatan dan pembangunan dukuh</p>
+        </div>
+        <div class="grid" id="latest-news-grid">
+            <!-- News items will be loaded here via JS -->
+            <p style="text-align: center; width: 100%;">Memuat berita...</p>
+        </div>
+        <div style="text-align: center; margin-top: 2rem;">
+            <a href="#" class="btn">Lihat Semua Berita</a>
+        </div>
+    </section>
+
+    <!-- Potensi Unggulan -->
+    <section class="container" style="background-color: var(--light-bg); padding: 3rem 1rem; border-radius: 10px;">
+        <div class="section-title">
+            <h2>Potensi Unggulan</h2>
+            <p>Kekayaan alam dan sumber daya manusia Dukuh Banaran Kidul</p>
+        </div>
+        <div class="grid" id="featured-potency-grid">
+            <!-- Potency items will be loaded here via JS -->
+             <p style="text-align: center; width: 100%;">Memuat potensi...</p>
+        </div>
+    </section>
+
+    <!-- Layanan -->
+    <section class="container">
+        <div class="section-title">
+            <h2>Layanan Publik</h2>
+        </div>
+        <div class="grid">
+            <div class="feature-card">
+                <i class="fas fa-file-alt feature-icon"></i>
+                <h3>Administrasi Kependudukan</h3>
+                <p>Layanan pembuatan KTP, KK, Akta Kelahiran, dan surat keterangan lainnya.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-heartbeat feature-icon"></i>
+                <h3>Kesehatan</h3>
+                <p>Layanan Posyandu Balita, Lansia, dan Polindes untuk masyarakat.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-hand-holding-usd feature-icon"></i>
+                <h3>Bantuan Sosial</h3>
+                <p>Informasi dan penyaluran bantuan sosial bagi masyarakat yang membutuhkan.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Tentang Kami</h3>
+                <p id="footer-desc">Website Resmi Profil Dukuh Banaran Kidul.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Kontak</h3>
+                <ul class="footer-links">
+                    <li><i class="fas fa-map-marker-alt"></i> <span id="footer-address">Alamat Dukuh</span></li>
+                    <li><i class="fas fa-phone"></i> <span id="footer-phone">Telepon</span></li>
+                    <li><i class="fas fa-envelope"></i> <span id="footer-email">Email</span></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Ikuti Kami</h3>
+                <div class="social-links">
+                    <a href="#" id="social-fb"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" id="social-ig"><i class="fab fa-instagram"></i></a>
+                    <a href="#" id="social-yt"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2026 Dukuh Banaran Kidul. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

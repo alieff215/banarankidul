@@ -1,0 +1,32 @@
+[
+    {
+        "image": "images/TPA.jfif",
+        "title": "Kegiatan TPA Anak-Anak",
+        "date": "2026-02-09"
+    },
+    {
+        "image": "images/Kerja_Bakti.jfif",
+        "title": "Kerja Bakti Bersih Dukuh",
+        "date": "2026-02-08"
+    },
+    {
+        "image": "images/posyandu.jfif",
+        "title": "Kegiatan Posyandu Balita",
+        "date": "2026-02-14"
+    },
+    {
+        "image": "images/musyawarah.jfif",
+        "title": "Musyawarah Dukuh",
+        "date": "2026-02-07"
+    },
+    {
+        "image": "https://placehold.co/600x400/9b59b6/ffffff?text=Posyandu",
+        "title": "Kegiatan Posyandu Balita",
+        "date": "2025-12-05"
+    },
+    {
+        "image": "images/pelatihan_umkm.jfif",
+        "title": "Pelatihan UMKM Dukuh",
+        "date": "2026-01-15"
+    }
+]

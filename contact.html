@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak - Dukuh Banaran Kidul</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%233498db'/%3E%3Cpath d='M16 30 L32 18 L48 30 V50 H16 Z' fill='%23ffffff'/%3E%3Crect x='26' y='34' width='12' height='16' fill='%233498db'/%3E%3C/svg%3E">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader-spinner"></div>
+        <div class="loader-text">SELAMAT DATANG</div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <i class="fas fa-landmark"></i> Dukuh Banaran Kidul
+            </a>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="profile.html">Profil Dukuh</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">Potensi</a>
+                    <div class="dropdown-content">
+                        <a href="tourism.html">Wisata</a>
+                        <a href="posyandu.html">Posyandu</a>
+                        <a href="umkm.html">UMKM</a>
+                        <a href="gallery.html">Galeri Kegiatan</a>
+                    </div>
+                </li>
+                <li><a href="contact.html" class="active">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <div class="hero" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://placehold.co/1920x600/e67e22/ffffff?text=Hubungi+Kami');">
+        <div class="hero-content">
+            <h1>Kontak Kami</h1>
+            <p>Sampaikan pertanyaan, saran, atau kritik Anda</p>
+        </div>
+    </div>
+
+    <!-- Contact Info & Form -->
+    <section class="container">
+        <div class="grid contact-grid">
+            
+            <!-- Info -->
+            <div class="contact-info">
+                <div class="section-title" style="text-align: left;">
+                    <h2>Informasi Kontak</h2>
+                    <p>Kantor Kepala Dukuh Banaran Kidul siap melayani Anda pada jam kerja.</p>
+                </div>
+                
+                <div style="margin-bottom: 2rem;">
+                    <div style="display: flex; gap: 1rem; margin-bottom: 1.5rem;">
+                        <div style="width: 50px; height: 50px; background: var(--light-bg); display: flex; align-items: center; justify-content: center; border-radius: 50%; color: var(--secondary-color); font-size: 1.2rem;">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h4 style="margin-bottom: 0.5rem;">Alamat</h4>
+                            <p id="contact-address">Jl. Raya Banaran Kidul No. 1, Dukuh Banaran Kidul, Kec. Contoh, Kab. Contoh</p>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; gap: 1rem; margin-bottom: 1.5rem;">
+                        <div style="width: 50px; height: 50px; background: var(--light-bg); display: flex; align-items: center; justify-content: center; border-radius: 50%; color: var(--secondary-color); font-size: 1.2rem;">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h4 style="margin-bottom: 0.5rem;">Telepon</h4>
+                            <p id="contact-phone">081327991741</p>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; gap: 1rem; margin-bottom: 1.5rem;">
+                        <div style="width: 50px; height: 50px; background: var(--light-bg); display: flex; align-items: center; justify-content: center; border-radius: 50%; color: var(--secondary-color); font-size: 1.2rem;">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4 style="margin-bottom: 0.5rem;">Email</h4>
+                            <p id="contact-email">info@banarankidul.desa.id</p>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; gap: 1rem; margin-bottom: 1.5rem;">
+                        <div style="width: 50px; height: 50px; background: var(--light-bg); display: flex; align-items: center; justify-content: center; border-radius: 50%; color: var(--secondary-color); font-size: 1.2rem;">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div>
+                            <h4 style="margin-bottom: 0.5rem;">Jam Operasional</h4>
+                            <p>Senin - Jumat: 08:00 - 16:00 WIB<br>Sabtu - Minggu: Libur</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Form -->
+            <div class="contact-form">
+                <h3 style="margin-bottom: 1.5rem;">Kirim Pesan</h3>
+                <form onsubmit="event.preventDefault(); alert('Terima kasih! Pesan Anda telah terkirim (Simulasi).');">
+                    <div style="margin-bottom: 1rem;">
+                        <label for="name" style="display: block; margin-bottom: 0.5rem;">Nama Lengkap</label>
+                        <input type="text" id="name" style="width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: 4px;" required>
+                    </div>
+                    <div style="margin-bottom: 1rem;">
+                        <label for="email" style="display: block; margin-bottom: 0.5rem;">Email</label>
+                        <input type="email" id="email" style="width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: 4px;" required>
+                    </div>
+                    <div style="margin-bottom: 1rem;">
+                        <label for="subject" style="display: block; margin-bottom: 0.5rem;">Subjek</label>
+                        <input type="text" id="subject" style="width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: 4px;" required>
+                    </div>
+                    <div style="margin-bottom: 1rem;">
+                        <label for="message" style="display: block; margin-bottom: 0.5rem;">Pesan</label>
+                        <textarea id="message" rows="5" style="width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: 4px;" required></textarea>
+                    </div>
+                    <button type="submit" class="btn" style="width: 100%;">Kirim Pesan</button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Map -->
+    <section class="container">
+        <div class="section-title">
+            <h2>Lokasi Kantor Dukuh</h2>
+            <p>Temukan lokasi kami di peta</p>
+        </div>
+        <div class="contact-map">
+            <iframe 
+                width="100%" 
+                height="100%" 
+                frameborder="0" 
+                scrolling="no" 
+                marginheight="0" 
+                marginwidth="0" 
+                src="https://maps.google.com/maps?q=-7.801368,110.364756&hl=id&z=15&amp;output=embed">
+            </iframe>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Tentang Kami</h3>
+                <p id="footer-desc">Website Resmi Profil Dukuh Banaran Kidul.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Kontak</h3>
+                <ul class="footer-links">
+                    <li><i class="fas fa-map-marker-alt"></i> <span id="footer-address">Alamat Dukuh</span></li>
+                    <li><i class="fas fa-phone"></i> <span id="footer-phone">Telepon</span></li>
+                    <li><i class="fas fa-envelope"></i> <span id="footer-email">Email</span></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Ikuti Kami</h3>
+                <div class="social-links">
+                    <a href="#" id="social-fb"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" id="social-ig"><i class="fab fa-instagram"></i></a>
+                    <a href="#" id="social-yt"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2026 Dukuh Banaran Kidul. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Update contact specific info from config
+        window.addEventListener('load', async () => {
+            try {
+                const response = await fetch('data/config.json');
+                const config = await response.json();
+                
+                const cAddress = document.getElementById('contact-address');
+                const cPhone = document.getElementById('contact-phone');
+                const cEmail = document.getElementById('contact-email');
+
+                if (cAddress) cAddress.textContent = config.address;
+                if (cPhone) cPhone.textContent = config.phone;
+                if (cEmail) cEmail.textContent = config.email;
+
+            } catch (e) { console.error(e); }
+        });
+    </script>
+</body>
+</html>

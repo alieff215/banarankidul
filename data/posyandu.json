@@ -1,0 +1,34 @@
+{
+    "description": "Posyandu (Pos Pelayanan Terpadu) Dukuh Banaran Kidul berperan aktif dalam memantau kesehatan ibu dan anak, lansia, serta remaja.",
+    "schedules": [
+        {
+            "name": "Posyandu Balita 'Tunas Harapan'",
+            "day": "Setiap tanggal 13",
+            "week": "Setiap bulan",
+            "time": "08:00 - 11:00 WIB",
+            "location": "Balai Dusun Banaran I",
+            "activities": ["Penimbangan Berat Badan", "Imunisasi", "Pemberian Makanan Tambahan (PMT)"]
+        },
+        {
+            "name": "Posyandu Lansia 'Sehat Bahagia'",
+            "day": "Setiap 3 bulan sekali",
+            "week": "-",
+            "time": "09:00 - 12:00 WIB",
+            "location": "Balai Dukuh Banaran Kidul",
+            "activities": ["Cek Tensi", "Senam Lansia", "Pemeriksaan Gula Darah"]
+        },
+        {
+            "name": "Posyandu Remaja 'Generasi Emas'",
+            "day": "Setiap 3 bulan sekali",
+            "week": "-",
+            "time": "15:00 - 17:00 WIB",
+            "location": "Pendopo Balai Dukuh",
+            "activities": ["Penyuluhan Kesehatan", "Konseling", "Olahraga Bersama"]
+        }
+    ],
+    "gallery": [
+        "https://placehold.co/400x300/e74c3c/ffffff?text=Kegiatan+Balita",
+        "https://placehold.co/400x300/3498db/ffffff?text=Senam+Lansia",
+        "https://placehold.co/400x300/9b59b6/ffffff?text=Pemeriksaan"
+    ]
+}

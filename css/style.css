@@ -39,6 +39,12 @@ p {
     text-align: justify;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 /* Header & Navigation */
 header {
     background-color: var(--navbar-bg);
@@ -324,6 +330,7 @@ header {
 .hero-content {
     position: relative;
     z-index: 1;
+    pointer-events: none;
 }
 
 .hero-content h1 {
@@ -335,6 +342,10 @@ header {
     font-size: 1.2rem;
     margin-bottom: 2rem;
     text-align: center;
+}
+
+.hero-content .btn {
+    pointer-events: auto;
 }
 
 .hero-nav {
@@ -706,8 +717,9 @@ footer {
     }
 
     .navbar {
-        padding: 0 0.75rem;
-        height: 50px;
+        padding: 0 0.85rem;
+        height: 54px;
+        position: relative;
     }
 
     .logo {
@@ -726,16 +738,18 @@ footer {
 
     .nav-links {
         position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background-color: var(--primary-color);
+        top: calc(100% + 10px);
+        right: 0.85rem;
+        left: auto;
+        width: 240px;
+        background: rgba(44, 62, 80, 0.97);
         flex-direction: column;
-        padding: 0;
-        box-shadow: 0 5px 5px rgba(0,0,0,0.25);
+        padding: 0.45rem;
+        box-shadow: 0 18px 40px rgba(0,0,0,0.45);
         display: none;
         height: auto;
-        z-index: 999;
+        z-index: 1500;
+        border-radius: 14px;
     }
 
     .nav-links.active {
@@ -746,13 +760,28 @@ footer {
         text-align: left;
         width: 100%;
         height: auto;
-        border-bottom: 1px solid rgba(255,255,255,0.08);
+        border-bottom: none;
+    }
+
+    .nav-links li + li {
+        margin-top: 0.15rem;
     }
 
     .nav-links li a {
-        padding: 0.9rem 1.25rem;
+        padding: 0.7rem 1rem;
         height: auto;
         display: block;
+        color: var(--white);
+        border-radius: 999px;
+    }
+
+    .nav-links li a::after {
+        display: none;
+    }
+
+    .nav-links li a:hover,
+    .nav-links li a.active {
+        background-color: rgba(255, 255, 255, 0.14);
         color: var(--white);
     }
 
@@ -763,11 +792,10 @@ footer {
     }
     
     .dropdown-content {
-        position: relative;
+        position: static;
         box-shadow: none;
-        background-color: var(--primary-color);
+        background-color: transparent;
         width: 100%;
-        top: 0;
         opacity: 1; 
         transform: none;
         display: none;
@@ -780,7 +808,7 @@ footer {
     }
 
     .dropdown-content a {
-        padding: 0.8rem 1.25rem;
+        padding: 0.6rem 1.5rem;
         font-size: 0.9rem;
         background-color: transparent !important;
         color: var(--white) !important;

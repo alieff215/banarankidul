@@ -23,6 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
         loadPosyandu();
     } else if (path.includes('gallery.html')) {
         loadGallery();
+        setupGalleryHeroSlider();
     } else if (path.includes('contact.html')) {
         // Contact page specific logic if needed
     }
@@ -106,6 +107,61 @@ function setupHeroSlider() {
     slider.addEventListener('mouseleave', startAutoSlide);
 
     startAutoSlide();
+}
+
+// Hero slider khusus halaman galeri (gambar dari data/gallery.json)
+async function setupGalleryHeroSlider() {
+    const slider = document.querySelector('.hero-slider-gallery');
+    if (!slider) return;
+
+    try {
+        const response = await fetch('data/gallery.json');
+        const data = await response.json();
+
+        if (!Array.isArray(data) || !data.length) return;
+
+        // Buat slide dari semua gambar galeri
+        slider.innerHTML = data.map((item, index) => `
+            <div class="hero-slide${index === 0 ? ' active' : ''}" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('${item.image}');"></div>
+        `).join('');
+
+        const slides = slider.querySelectorAll('.hero-slide');
+        if (!slides.length) return;
+
+        let currentIndex = 0;
+        let intervalId;
+
+        const setActiveSlide = (index) => {
+            slides[currentIndex].classList.remove('active');
+            currentIndex = (index + slides.length) % slides.length;
+            slides[currentIndex].classList.add('active');
+        };
+
+        const nextSlide = () => {
+            setActiveSlide(currentIndex + 1);
+        };
+
+        const startAutoSlide = () => {
+            if (intervalId) {
+                clearInterval(intervalId);
+            }
+            intervalId = setInterval(nextSlide, 3000);
+        };
+
+        const stopAutoSlide = () => {
+            if (intervalId) {
+                clearInterval(intervalId);
+                intervalId = null;
+            }
+        };
+
+        slider.addEventListener('mouseenter', stopAutoSlide);
+        slider.addEventListener('mouseleave', startAutoSlide);
+
+        startAutoSlide();
+    } catch (error) {
+        console.error('Error setting up gallery hero slider:', error);
+    }
 }
 
 // Preloader Handler

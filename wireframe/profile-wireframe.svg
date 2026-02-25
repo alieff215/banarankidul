@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="2000">
+  <style>
+    .box { fill:#f5f5f5; stroke:#333; stroke-width:2; }
+    .header { fill:#e0e0e0; }
+    .title { font-family:Segoe UI, Arial; font-size:22px; font-weight:bold; }
+    .label { font-family:Segoe UI, Arial; font-size:16px; }
+  </style>
+
+  <!-- Header -->
+  <rect class="box header" x="80" y="60" width="1040" height="80" rx="8"/>
+  <text class="title" x="110" y="110">HEADER – Profil Dukuh</text>
+
+  <!-- Hero -->
+  <rect class="box" x="80" y="170" width="1040" height="220" rx="8"/>
+  <text class="title" x="110" y="210">HERO PROFIL</text>
+  <text class="label" x="110" y="240">Judul "Profil Dukuh" + subjudul</text>
+
+  <!-- Sejarah -->
+  <rect class="box" x="80" y="420" width="1040" height="220" rx="8"/>
+  <text class="title" x="110" y="460">SEJARAH DUKUH</text>
+  <text class="label" x="110" y="490">Kartu teks panjang berisi sejarah</text>
+
+  <!-- Letak Geografis & Peta -->
+  <rect class="box" x="80" y="670" width="1040" height="260" rx="8"/>
+  <text class="title" x="110" y="710">LETAK GEOGRAFIS &amp; PETA</text>
+  <rect class="box" x="110" y="740" width="430" height="160" rx="6"/>
+  <text class="label" x="130" y="770">Batas wilayah (Utara, Selatan, dll.)</text>
+  <rect class="box" x="590" y="740" width="500" height="160" rx="6"/>
+  <text class="label" x="610" y="770">Google Maps embed</text>
+
+  <!-- Video Profil -->
+  <rect class="box" x="80" y="960" width="1040" height="260" rx="8"/>
+  <text class="title" x="110" y="1000">VIDEO PROFIL DUKUH</text>
+  <rect class="box" x="110" y="1030" width="500" height="170" rx="6"/>
+  <text class="label" x="130" y="1070">Thumbnail YouTube + ikon play</text>
+  <text class="label" x="640" y="1070">Judul &amp; deskripsi video</text>
+
+  <!-- Struktur Organisasi -->
+  <rect class="box" x="80" y="1250" width="1040" height="300" rx="8"/>
+  <text class="title" x="110" y="1290">STRUKTUR ORGANISASI</text>
+  <text class="label" x="110" y="1320">Grid kartu: Kepala Dukuh, Sekretaris, Bendahara, dst.</text>
+
+  <!-- Footer -->
+  <rect class="box header" x="80" y="1580" width="1040" height="180" rx="8"/>
+  <text class="title" x="110" y="1620">FOOTER</text>
+  <text class="label" x="110" y="1650">Tentang Kami | Kontak | Ikuti Kami</text>
+  <text class="label" x="110" y="1690">©2026 KKN UAD R 155 I.D.3 | Dukuh Banaran Kidul.</text>
+</svg>

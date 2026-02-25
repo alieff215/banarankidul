@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1800">
+  <style>
+    .box { fill:#f5f5f5; stroke:#333; stroke-width:2; }
+    .header { fill:#e0e0e0; }
+    .title { font-family:Segoe UI, Arial; font-size:22px; font-weight:bold; }
+    .label { font-family:Segoe UI, Arial; font-size:16px; }
+  </style>
+
+  <!-- Header -->
+  <rect class="box header" x="80" y="60" width="1040" height="80" rx="8"/>
+  <text class="title" x="110" y="110">HEADER – Kontak</text>
+
+  <!-- Hero -->
+  <rect class="box" x="80" y="170" width="1040" height="220" rx="8"/>
+  <text class="title" x="110" y="210">HERO KONTAK</text>
+  <text class="label" x="110" y="240">Judul "Kontak" + subjudul</text>
+
+  <!-- Grid Kontak + Form -->
+  <rect class="box" x="80" y="420" width="1040" height="360" rx="8"/>
+  <text class="title" x="110" y="460">INFO KONTAK &amp; FORM</text>
+  <rect class="box" x="110" y="490" width="430" height="260" rx="6"/>
+  <text class="label" x="130" y="520">Alamat, Telepon, Email, Jam layanan</text>
+  <rect class="box" x="590" y="490" width="500" height="260" rx="6"/>
+  <text class="label" x="610" y="520">Form: Nama, Email, Pesan, tombol Kirim</text>
+
+  <!-- Footer -->
+  <rect class="box header" x="80" y="820" width="1040" height="180" rx="8"/>
+  <text class="title" x="110" y="860">FOOTER</text>
+  <text class="label" x="110" y="890">Tentang Kami | Kontak | Ikuti Kami</text>
+  <text class="label" x="110" y="930">©2026 KKN UAD R 155 I.D.3 | Dukuh Banaran Kidul.</text>
+</svg>

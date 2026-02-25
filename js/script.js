@@ -24,6 +24,8 @@ document.addEventListener('DOMContentLoaded', () => {
     } else if (path.includes('gallery.html')) {
         loadGallery();
         setupGalleryHeroSlider();
+    } else if (path.includes('news-detail.html')) {
+        loadNewsDetail();
     } else if (path.includes('contact.html')) {
         // Contact page specific logic if needed
     }
@@ -357,13 +359,53 @@ async function loadLatestNews() {
                     <div class="card-meta">${formatDate(item.date)}</div>
                     <h3 class="card-title">${item.title}</h3>
                     <p class="card-text">${item.summary}</p>
-                    <a href="#" class="read-more">Baca Selengkapnya &rarr;</a>
+                    <a href="news-detail.html?id=${item.id}" class="read-more">Baca Selengkapnya &rarr;</a>
                 </div>
             </div>
         `).join('');
     } catch (error) {
         console.error('Error loading news:', error);
         newsContainer.innerHTML = '<p>Gagal memuat berita.</p>';
+    }
+}
+
+async function loadNewsDetail() {
+    const container = document.getElementById('news-detail');
+    if (!container) return;
+
+    const params = new URLSearchParams(window.location.search);
+    const idParam = params.get('id');
+    const id = idParam ? parseInt(idParam, 10) : NaN;
+
+    if (!id || Number.isNaN(id)) {
+        container.innerHTML = '<p>Berita tidak ditemukan.</p>';
+        return;
+    }
+
+    try {
+        const response = await fetch('data/news.json');
+        const news = await response.json();
+        const item = Array.isArray(news) ? news.find(n => n.id === id) : null;
+
+        if (!item) {
+            container.innerHTML = '<p>Berita tidak ditemukan.</p>';
+            return;
+        }
+
+        container.innerHTML = `
+            <div class="card">
+                <img src="${item.image}" alt="${item.title}" class="card-img">
+                <div class="card-content">
+                    <div class="card-meta">${formatDate(item.date)}</div>
+                    <h1 class="card-title" style="margin-bottom: 1rem;">${item.title}</h1>
+                    <p class="card-text" style="white-space: pre-line;">${item.content}</p>
+                    <a href="index.html" class="read-more" style="margin-top: 1.5rem; display: inline-block;">&larr; Kembali ke Beranda</a>
+                </div>
+            </div>
+        `;
+    } catch (error) {
+        console.error('Error loading news detail:', error);
+        container.innerHTML = '<p>Gagal memuat detail berita.</p>';
     }
 }
 

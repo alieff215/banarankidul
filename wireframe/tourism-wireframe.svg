@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1600">
+  <style>
+    .box { fill:#f5f5f5; stroke:#333; stroke-width:2; }
+    .header { fill:#e0e0e0; }
+    .title { font-family:Segoe UI, Arial; font-size:22px; font-weight:bold; }
+    .label { font-family:Segoe UI, Arial; font-size:16px; }
+  </style>
+
+  <!-- Header -->
+  <rect class="box header" x="80" y="60" width="1040" height="80" rx="8"/>
+  <text class="title" x="110" y="110">HEADER – Wisata</text>
+
+  <!-- Hero -->
+  <rect class="box" x="80" y="170" width="1040" height="220" rx="8"/>
+  <text class="title" x="110" y="210">HERO WISATA</text>
+  <text class="label" x="110" y="240">Judul "Destinasi Wisata" + subjudul</text>
+
+  <!-- Intro -->
+  <rect class="box" x="80" y="420" width="1040" height="140" rx="8"/>
+  <text class="title" x="110" y="460">INTRO</text>
+  <text class="label" x="110" y="490">Paragraf: saat ini belum ada destinasi wisata</text>
+
+  <!-- Grid Wisata -->
+  <rect class="box" x="80" y="590" width="1040" height="260" rx="8"/>
+  <text class="title" x="110" y="630">GRID WISATA</text>
+  <text class="label" x="110" y="660">Placeholder: "Belum ada data wisata yang terdaftar."</text>
+
+  <!-- Footer -->
+  <rect class="box header" x="80" y="900" width="1040" height="180" rx="8"/>
+  <text class="title" x="110" y="940">FOOTER</text>
+  <text class="label" x="110" y="970">Tentang Kami | Kontak | Ikuti Kami</text>
+  <text class="label" x="110" y="1010">©2026 KKN UAD R 155 I.D.3 | Dukuh Banaran Kidul.</text>
+</svg>
